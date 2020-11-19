@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5%;
+    overflow: hidden;
+    transition: 0.6s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+li img {
+    width: 25%;
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    background-image: url("../img/pexels-photo-919734.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+
+/*Utilizar aplicacion*/
+
+.two-column-section-2 {
+    float: left;
+    width: 50%;
+    padding: 1% 4%;
+}
+
+.two-column-section-2-b {
+    float: left;
+    width: 50%;
+    padding: 8% 4%;
+}
+
+.two-column-section-2-b img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.two-column-section-2 h1 {
+    font-size: 5vw;
+}
+
+.two-column-section-2 h2 {
+    font-size: 3vw;
+}
+
+.two-column-section-2 p {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+
+/*Quienes somos*/
+
+.two-column-section-1 {
+    width: 50%;
+    padding: 0% 4%;
+    float: left;
+}
+
+.two-column-section-1 p {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.two-column-section-1 img {
+    width: 100%;
+    padding: 7% 2%;
+    border-radius: 100px;
+}
+
+.two-column-section-1 h2 {
+    font-size: 35px;
+}
+
+#two-column-section-1b p {
+    font-size: 20px;
+}
+
+#two-column-section-1b h2 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.two-column-section-1 h1,
+.one-column-section-1 h1 {
+    font-size: 5vw;
+}
+
+.one-column-section-1 {
+    float: left;
+    width: 100%;
+    padding: 0% 4%;
+    text-align: center;
+}
+
+.one-column-section-1 p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/*Contactanos*/
+
+
+/*Footer*/
+
+#footer-1 {
+    width: 100%;
+    padding: 2%;
+    float: left;
+}
+
+#footer-2 {
+    width: 20%;
+    float: left;
+    padding-left: 1%;
+}
+
+#footer-2 img {
+    width: 70%;
+}
+
+.footer-3 {
+    width: 38%;
+    padding: 50px 0px;
+    float: right;
+}
+
+.footer-3 img {
+    width: 80%;
+    float: right;
+    padding-right: 10%;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: yellow;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    float: inline-end;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    .two-column-section-1 {
+        width: 100%;
+    }
+    .two-column-section-2 {
+        width: 100%;
+    }
+    .two-column-section-2-b {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .header {
+        width: 40px;
+    }
+    .ul {
+        width: 100%;
+    }
+    .footer-3 {
+        width: 38%;
+    }
+}
+
+
+}
